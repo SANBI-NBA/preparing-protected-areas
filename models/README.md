@@ -48,6 +48,6 @@ A multifunctional process for fixing problematic vector data:
 
 QGIS has a more sophisticated snapping algorithm than sf, and this model can be useful when R-based topology fixing or snapping processes causes errors. It is highly recommended that this model is run during the final processing of output protected area data in step 7 of `processing-paca.R.`
 
-**identify-pa-clusters**
+### **identify-pa-clusters**
 
 Step 5 in `processing-paca.R` identifies clusters of adjacent protected areas for assigning cluster IDs. There is code in step 5 that can achieve this in R, but it can take up to 30 minutes to run. In contrast, this model achieves the same outcome in about 5 seconds. If you are in a hurry, it is highly recommended that step 5 is replaced with this model. Code for writing and re-reading the spatial data is already set up in section 1.5.
